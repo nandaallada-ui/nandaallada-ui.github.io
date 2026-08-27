@@ -2,14 +2,15 @@
 body {
     font-family: Tahoma, Helvetica, sans-serif;
     color: #2b2b2b;
-    background-color: rgb(149, 186, 253);
+    background:url(baskingshark.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
+    opacity: 0.7;
 }
 
 #content {
-    background-color: aliceblue;
+    background-color: rgb(164, 211, 253);
     width: 70%;
     padding: 5px;
     margin: 0 auto; /* Center */
