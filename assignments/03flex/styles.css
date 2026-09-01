@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
-  background-color: #f0eecc; /* cream shows through as the gaps between sections */
+  background-color: #f0eecc; 
 }
 
 img {
@@ -15,8 +15,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* ---------- header ---------- */
 
 header {
   background-color: #f0eecc;
@@ -27,14 +25,12 @@ header {
 
 header h1 {
   margin: 0;
-  color: #4c7c8c;
+  color: #2a3c42;
   font-size: 2.4rem;
 }
 
-/* ---------- nav ---------- */
-
 nav {
-  background-color: #cd7873;
+  background-color: #cbdcf1;
   margin-bottom: 6px;
 }
 
@@ -68,8 +64,6 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-/* ---------- sidebar + column row ---------- */
-
 .content-row {
   display: flex;
   gap: 6px;
@@ -78,14 +72,14 @@ nav a:hover {
 
 .sidebar {
   flex: 0 0 19%;
-  background-color: #eeb3b6;
+  background-color: #79b6fb;
   padding: 20px 14px;
   text-align: center;
 }
 
 .sidebar h2 {
   margin: 0 0 16px;
-  color: #4c7c8c;
+  color: #467c8e;
 }
 
 .sidebar-links {
@@ -101,7 +95,7 @@ nav a:hover {
 .sidebar-links a {
   display: block;
   background-color: #ffffff;
-  color: #cd7873;
+  color: #758bde;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -109,7 +103,7 @@ nav a:hover {
 
 .column {
   flex: 1;
-  background-color: #a9c5bb;
+  background-color: #8bb1fc;
 }
 
 .column h3 {
@@ -124,8 +118,6 @@ nav a:hover {
   width: 100%;
 }
 
-/* ---------- idea rows ---------- */
-
 .idea-row {
   display: flex;
   margin-bottom: 6px;
@@ -138,7 +130,7 @@ nav a:hover {
 
 .idea-text {
   flex: 1;
-  background-color: #5b8791;
+  background-color: #587278;
   color: #ffffff;
   padding: 24px 30px;
 }
@@ -152,10 +144,8 @@ nav a:hover {
   margin-bottom: 0;
 }
 
-/* ---------- footer ---------- */
-
 footer {
-  background-color: #cd7873;
+  background-color: #a397f0;
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -164,8 +154,6 @@ footer {
 footer p {
   margin: 0;
 }
-
-/* ---------- small screens: stack everything vertically ---------- */
 
 @media (max-width: 700px) {
 
