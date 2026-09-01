@@ -1,11 +1,7 @@
 /*structure*/
 body {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(146, 204, 255, 0.6);
     background-image: url('../images/baskingshark.jpg');
-    background-blend-mode: lighten;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 #content {
