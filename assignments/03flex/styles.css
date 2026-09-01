@@ -1,0 +1,201 @@
+/* ---------- base / structure ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+  background-color: #f0eecc; /* cream shows through as the gaps between sections */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- header ---------- */
+
+header {
+  background-color: #f0eecc;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 6px;
+}
+
+header h1 {
+  margin: 0;
+  color: #4c7c8c;
+  font-size: 2.4rem;
+}
+
+/* ---------- nav ---------- */
+
+nav {
+  background-color: #cd7873;
+  margin-bottom: 6px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav a {
+  display: block;
+  padding: 16px 10px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------- sidebar + column row ---------- */
+
+.content-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.sidebar {
+  flex: 0 0 19%;
+  background-color: #eeb3b6;
+  padding: 20px 14px;
+  text-align: center;
+}
+
+.sidebar h2 {
+  margin: 0 0 16px;
+  color: #4c7c8c;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 6px;
+}
+
+.sidebar-links a {
+  display: block;
+  background-color: #ffffff;
+  color: #cd7873;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.column {
+  flex: 1;
+  background-color: #a9c5bb;
+}
+
+.column h3 {
+  margin: 0;
+  background-color: #4c7c8c;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+}
+
+.column img {
+  width: 100%;
+}
+
+/* ---------- idea rows ---------- */
+
+.idea-row {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.idea-img {
+  flex: 0 0 300px;
+  width: 300px;
+}
+
+.idea-text {
+  flex: 1;
+  background-color: #5b8791;
+  color: #ffffff;
+  padding: 24px 30px;
+}
+
+.idea-text h3 {
+  margin-top: 0;
+}
+
+.idea-text p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  background-color: #cd7873;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- small screens: stack everything vertically ---------- */
+
+@media (max-width: 700px) {
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  .content-row {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1 1 auto;
+  }
+
+  .idea-row {
+    flex-direction: column;
+  }
+
+  .idea-img {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
