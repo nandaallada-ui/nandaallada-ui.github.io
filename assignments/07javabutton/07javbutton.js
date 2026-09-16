@@ -10,14 +10,14 @@ document.getElementById("speech-trigger").onclick = () => {
 };
 
 
-document.getElementById("sel-beverage").onchange = (e) => {
+document.getElementById("sel-shark").onchange = (e) => {
     const choice = e.currentTarget.value;
-    const response = document.getElementById("p-beverage-response");
+    const response = document.getElementById("p-shark-response");
 
     if (choice === "") {
         response.innerHTML = "";
     } else {
-        response.innerHTML = `${choice}: Nice Choice!`;
+        response.innerHTML = `the ${choice} shark. Good choice.`;
     }
 };
 
