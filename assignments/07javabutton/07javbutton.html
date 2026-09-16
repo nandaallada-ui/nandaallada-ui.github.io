@@ -15,48 +15,38 @@
 
         <main id="content" class="columns">
 
+
             <section class="box" id="speech-box">
-                <h3>Speech</h3>
-                <p>
-                    <label for="txt-speech">Type something:</label><br>
-                    <input type="text" id="txt-speech" placeholder="Say something...">
-                </p>
-                <p>
-                    <button id="btn-speech">Say It</button>
-                </p>
-                <p id="p-speech-output"></p>
+                <h3 id="speech-trigger">Speech</h3>
+                <div id="speech-bubble-container"></div>
             </section>
 
-            <section class="box" id="shark">
-                <h3>Shark</h3>
+            <section class="box" id="beverage-box">
+                <h3>Beverage</h3>
                 <p>
-                    <label for="sel-shark">Pick your favorite shark:</label><br>
-                    <select id="sel-shark">
-                        <option value=""> shark </option>
-                        <option value="Coffee">Great white</option>
-                        <option value="Tea">Tiger </option>
-                        <option value="Juice">Lemon </option>
-                        <option value="Water">Whale </option>
+                    <label for="sel-beverage">Pick your morning beverage:</label><br>
+                    <select id="sel-beverage">
+                        <option value="">-- Choose one --</option>
+                        <option value="Coffee">Coffee</option>
+                        <option value="Tea">Tea</option>
+                        <option value="Juice">Juice</option>
+                        <option value="Water">Water</option>
                     </select>
                 </p>
                 <p id="p-beverage-response"></p>
             </section>
 
             <section class="box" id="sticker-box">
-                <h3>Add a Sticker</h3>
+                <h3>Add a shark sticker</h3>
                 <div id="sticker-container">
-                    <span class="sticker">&#9728;&#65039;</span>
+                    <img id="main-sticker" class="sticker" src="../../images/fish1.png" alt="fish sticker">
                 </div>
                 <p>
-                    <button id="btn-add-sticker">Add Sticker</button>
+                    <button id="btn-add-sticker">Add other fish</button>
                 </p>
             </section>
 
         </main>
-
-        <footer id="main-footer">
-            <p>@portiaplante.com</p>
-        </footer>
 
     </div>
 

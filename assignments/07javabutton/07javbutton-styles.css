@@ -1,10 +1,9 @@
-
 :root {
-    --bg-color: #eef1de;       
-    --card-bg: #eee8c8;        
-    --card-border: #cfc9a8;   
-    --title-color: #4a7f8f;    
-    --accent-color: #e29578;   
+    --bg-color: #eef1de;        
+    --card-bg: #eee8c8;         
+    --card-border: #5d6898;
+    --title-color: #44869b;     
+    --accent-color: #7282f6;    
     --text-color: darkslategray;
 }
 
@@ -92,15 +91,62 @@ button:hover {
 }
 
 .sticker {
-    font-size: 3em;
-    line-height: 1;
+    width: 50px;
+    height: 50px;
 }
 
-#p-speech-output,
-#p-shark-response {
+#main-sticker {
+    width: 120px;
+    height: 120px;
+}
+
+#p-beverage-response {
     font-weight: bold;
     color: var(--title-color);
+    margin-top: 4px;
     min-height: 1.2em;
+}
+
+#speech-trigger {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#speech-bubble-container {
+    min-height: 50px;
+}
+
+.speech-bubble {
+    display: inline-block;
+    position: relative;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-top: 15px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    border-width: 12px 6px 0 0;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 21px;
+    border-width: 10px 5px 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    z-index: 1;
 }
 
 #main-footer {

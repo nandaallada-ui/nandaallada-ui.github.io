@@ -1,31 +1,33 @@
-document.getElementById("btn-speech").onclick = () => {
-    const typedText = document.getElementById("txt-speech").value;
-    const output = document.getElementById("p-speech-output");
 
-    if (typedText.trim() === "") {
-        output.innerHTML = "Type something first!";
+document.getElementById("speech-trigger").onclick = () => {
+    const bubbleContainer = document.getElementById("speech-bubble-container");
+
+    if (bubbleContainer.innerHTML === "") {
+        bubbleContainer.innerHTML = '<div class="speech-bubble">Hi</div>';
     } else {
-        output.innerHTML = `You said: "${typedText}"`;
+        bubbleContainer.innerHTML = "";
     }
 };
 
-document.getElementById("sel-shark").onchange = (e) => {
+
+document.getElementById("sel-beverage").onchange = (e) => {
     const choice = e.currentTarget.value;
-    const response = document.getElementById("p-shark-response");
+    const response = document.getElementById("p-beverage-response");
 
     if (choice === "") {
         response.innerHTML = "";
     } else {
-        response.innerHTML = `the ${choice} shark? good shark.`;
+        response.innerHTML = `${choice}: Nice Choice!`;
     }
 };
 
 document.getElementById("btn-add-sticker").onclick = () => {
     const container = document.getElementById("sticker-container");
 
-    const newSticker = document.createElement("span");
+    const newSticker = document.createElement("img");
+    newSticker.src = "../../images/fish2.png"; 
     newSticker.classList.add("sticker");
-    newSticker.innerHTML = "&#9728;&#65039;"; 
+    newSticker.alt = "fish sticker";
 
     container.appendChild(newSticker);
 };
