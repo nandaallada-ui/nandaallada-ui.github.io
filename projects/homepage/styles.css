@@ -96,7 +96,7 @@ button { font: inherit; cursor: pointer; }
 }
 
 /* util bar */
-.utility-bar { background: #1d1d1f; color: #fff; font-size: .9rem; }
+.utility-bar { background: #2b2b41; color: #fff; font-size: .9rem; }
 .utility-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 52px; }
 .utility-links { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 .utility-links a, .utility-links .dropdown-toggle {
