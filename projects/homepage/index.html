@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Placeholder description for the College of Engineering and Computing homepage.">
+  <title>College Name | University Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!--util bar -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <a class="utility-logo" href="#" aria-label="University homepage">
+        <span class="ph ph-logo" role="img" aria-label="University logo placeholder">LOGO</span>
+      </a>
+      <ul class="utility-links">
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Apply</a></li>
+        <li><a href="#">Give</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="gateways-menu">Gateways</button>
+          <ul class="dropdown" id="gateways-menu">
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Faculty &amp; Staff</a></li>
+            <li><a href="#">Parents &amp; Families</a></li>
+            <li><a href="#">Alumni</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="#">College Name <strong>Engineering and Computing</strong></a>
+
+      <div class="header-tools">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      </div>
+    </div>
+
+
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul class="container nav-list">
+        <li><a class="nav-button" href="#academics">Academics</a></li>
+        <li><a class="nav-button" href="#research">Research</a></li>
+        <li><a class="nav-button" href="#student-experience">Student Experience</a></li>
+        <li><a class="nav-button" href="#departments">Departments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!--intro -->
+    <section class="intro">
+      <div class="container">
+        <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </section>
+
+    <!--Topic 1 -->
+    <section class="feature" id="academics">
+      <div class="container feature-inner">
+        <div class="feature-text">
+          <h2>Academics</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero, sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+          <a class="btn" href="#">Explore Academics</a>
+        </div>
+        <div class="feature-media">
+          <div class="ph ratio-3x2" role="img" aria-label="Students working in a lab placeholder">Image 1200 × 800</div>
+        </div>
+      </div>
+    </section>
+
+    <!--topic 2-->
+    <section class="feature feature-reverse" id="student-experience">
+      <div class="container feature-inner">
+        <div class="feature-text">
+          <h2>Student Experience</h2>
+          <p>Duis sagittis ipsum praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa vestibulum lacinia arcu eget nulla class aptent taciti sociosqu.</p>
+          <a class="btn" href="#">Get Involved</a>
+        </div>
+        <div class="feature-media">
+          <div class="ph ph-alt ratio-3x2" role="img" aria-label="Group of students with mascot placeholder">Image 1200 × 800</div>
+        </div>
+      </div>
+    </section>
+    
+    <!--shark species -->
+    <section class="duo" id="research">
+      <div class="container">
+        <div class="duo-text">
+          <h2>Research</h2>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Placeholder text about research areas.</p>
+          <a class="btn" href="#">Research Areas &amp; Labs</a>
+        </div>
+        <div class="duo-images">
+          <div class="ph ratio-4x5" role="img" aria-label="Researcher in lab placeholder">Image 800 × 1000</div>
+          <div class="ph ph-alt ratio-4x5" role="img" aria-label="Student with research equipment placeholder">Image 800 × 1000</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poaching/hunting -->
+    <section class="duo duo-reverse" id="departments">
+      <div class="container">
+        <div class="duo-text">
+          <h2>Departments Driving Change</h2>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Placeholder text about the college's departments.</p>
+          <a class="btn" href="#">Departments</a>
+        </div>
+        <div class="duo-images">
+          <div class="ph ph-warm ratio-4x5" role="img" aria-label="Hands holding a circuit board placeholder">Image 800 × 1000</div>
+          <div class="ph ratio-4x5" role="img" aria-label="Students at computers placeholder">Image 800 × 1000</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
