@@ -1,16 +1,15 @@
 //since CSS art from claude uses "part-item" phrasing, parts will be phrased like this to match
 
 const carColor = [
-  { body: "#39b6a0", roof: "#7fd6e8" }, // teal
-  { body: "#a4d84a", roof: "#7fd6e8" }, // green
-  { body: "#7c7fc9", roof: "#7fd6e8" }, // purple-blue
-  { body: "#e8846b", roof: "#7fd6e8" }, // orange-red
-  { body: "#2e1f5e", roof: "#7fd6e8" }, // dark navy
-  { body: "#cdeffb", roof: "#7fd6e8" }, // pale blue
-  { body: "#c07fd1", roof: "#7fd6e8" }, // pink-purple
-  { body: "#f2a950", roof: "#7fd6e8" }, // amber
-  { body: "#e0607a", roof: "#7fd6e8" }, // rose
-  { body: "#5aa8e8", roof: "#c8ecfb" }, // sky blue
+  { body: "#39b6a0", roof: "#7fd6e8" }, 
+  { body: "#a4d84a", roof: "#7fd6e8" }, 
+  { body: "#7c7fc9", roof: "#7fd6e8" }, 
+  { body: "#e8846b", roof: "#7fd6e8" }, 
+  { body: "#2e1f5e", roof: "#7fd6e8" }, 
+  { body: "#cdeffb", roof: "#7fd6e8" }, 
+  { body: "#c07fd1", roof: "#7fd6e8" }, 
+  { body: "#f2a950", roof: "#7fd6e8" }, 
+  { body: "#e0607a", roof: "#7fd6e8" }, 
 ];
 
 const road = document.getElementById("road");
