@@ -1,3 +1,5 @@
+//since CSS art from claude uses "part-item" phrasing, parts will be phrased like this to match
+
 const carColor = [
   { body: "#39b6a0", roof: "#7fd6e8" }, // teal
   { body: "#a4d84a", roof: "#7fd6e8" }, // green
