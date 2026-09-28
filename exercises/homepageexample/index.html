@@ -1,0 +1,114 @@
+redoing homepage from scratch, this has been reduced to a example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="site about sharks.">
+  <title>Site about sharks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!--util bar -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <!--will use later, no logo ideas rn-->
+      </ul>
+    </div>
+  </div>
+
+  <!--header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="#"> <strong>Engineering and Computing</strong></a>
+
+      <div class="header-tools">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      </div>
+    </div>
+
+
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul class="container nav-list">
+        <li><a class="nav-button" href="#abtShark">About Sharks</a></li>
+        <li><a class="nav-button" href="#behavior">Shark Behaviors</a></li>
+        <li><a class="nav-button" href="#Globalwarm">Poaching and global warming</a></li>
+        <li><a class="nav-button" href="#subspec"> Shark Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!--intro -->
+    <section class="intro">
+      <div class="container">
+        <p class="intro-text">CSCE 242 is a 3 credit course relating to the CIS and CS majors at the University of South Carolina. It focuses on web technologies and how they can be used to design websites.</p>
+      </div>
+    </section>
+
+    /* topic */
+    <section class="feature" id="abtShark">
+      <div class="container feature-inner">
+        <div class="feature-text">
+          <h2>About sharks</h2>
+          <p>In spite of the reputation people like to give sharks through movies like the Jaws series, sharks rarely hunt humans. In fact, you are more likely to die by coconut compared to a shark attack. However, according to the Florida Museum of Natural History, around 10 million sharks are hunted for every singular person killed by a shark. This site is dedicated to educating people about sharks, ranging from each type of shark to the various hunting styles of sharks.</p>
+          <a class="btn" href="#">More shark facts</a>
+        </div>
+        <div class="feature-media">
+          <img src="../../images/shark.jpg" alt="a shark" width="600" height="375"/>
+        </div>
+      </div>
+    </section>
+
+    <!--behavior-->
+    <section class="feature feature-reverse" id="behavior">
+      <div class="container feature-inner">
+        <div class="feature-text">
+          <h2>Shark behaviors</h2>
+          <p>Sharks have some somewhat interesting behaviors, for example, sharks tend to ignore humans competely outside of the odd boat bite, with most scuba divers reporting being ignored by sharks.</p>
+          <a class="btn" href="#">More shark behaviors</a>
+        </div>
+        <div class="feature-media">
+          <img src="../../images/GWB.webp" alt="great white bite" width="600" height="375"/>
+        </div>
+      </div>
+    </section>
+
+    <!--global warming -->
+    <section class="duo" id="#Globalwarm">
+      <div class="container">
+        <div class="duo-text">
+          <h2>Poaching and Global Warming</h2>
+          <p>Sharks are affected by poaching and global warming in various ways. For example, humans kill an estimated 100 million sharks a year, many for their fins, and over a third of shark and ray species are now threatened with extinction. Because sharks reproduce slowly, populations struggle to recover from the double pressure.</p>
+          <a class="btn" href="#">Global Warming</a>
+        </div>
+        <div class="duo-images">
+          <img src="../../images/globalwarm.jpg" alt="shark impacted by global warming" width="600" height="375"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- shark subspecies -->
+    <section class="duo duo-reverse" id="#subspec">
+      <div class="container">
+        <div class="duo-text">
+          <h2>Types of sharks</h2>
+          <p>Sharks and their various species tend to differ wildly, with species like the greenland shark being able to live up to 500 years old, while pygmy sharks tend to live to 7 years old.</p>
+          <a class="btn" href="#">More examples</a>
+        </div>
+        <div class="duo-images">
+          <img src="../../images/lemonshark.jpg" alt="Lemon shark" width="275" height="270"/>
+          <img src="../../images/baskingshark.jpg" alt="Basking shark" width="300" height="275"/>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
