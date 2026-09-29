@@ -16,7 +16,7 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:var(--lightxt); 
+    background-color:var(--background);
     padding:0px;
     margin:0px;
 }
@@ -73,6 +73,108 @@ h1, h2, h3 {
 .link {
     background:rgb(22, 127, 127);
     color:rgb(251, 251, 251);
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+.skip {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip:focus {
+    left: 10px;
+    top: 10px;
+    background: white;
+    padding: 8px;
+    z-index: 10;
+}
+
+#brand {
+    display: block;
+    padding: 16px 14px;
+    color: var(--headings);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#mnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mnav a {
+    color: white;
+    text-decoration: none;
+}
+
+#mnav a.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#intro {
+    padding: 15px;
+}
+
+main {
+    padding: 15px;
+}
+
+.topic {
+    background: var(--highlightbg);
+    border: 2px solid var(--headings);
+    box-shadow: 4px 4px 0 var(--headings);
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+.topic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid var(--headings);
+    padding: 8px;
+    text-align: left;
+}
+
+.species-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.species {
+    background: var(--highlightbg);
+    border: 2px solid var(--headings);
+    box-shadow: 4px 4px 0 var(--headings);
+    padding: 15px;
+}
+
+.species img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.citations li {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
 }
 
 @media (min-width: 1000px) {
@@ -114,7 +216,7 @@ h1, h2, h3 {
     }
 
     .four {
-        flex:4
+        flex:4;
     }
 
     .five {
@@ -123,5 +225,19 @@ h1, h2, h3 {
 
     .six {
         flex:6;
+    }
+
+    .topic {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .flip {
+        flex-direction: row-reverse;
+    }
+
+    .species-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
