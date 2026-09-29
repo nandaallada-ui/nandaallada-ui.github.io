@@ -2,25 +2,21 @@
 /* if anything is implemented that I asked AI how to implement, it will be mentioned in comments above the code */
 /* if anything not mentioned in any other assignment is implemented, such as a new page, it will be mentioned in a comment above it in the code */
 :root {
-    --background:#ffff;
-    --headings:#ffff;
-    --foot:#ffff;
-    --mnav:#ffff;
-    --hero:#ffff;
-    --highlightbg:#ffff;
-    --highlightfg:#ffff;
-    --cardsbg:#ffff;
-    --cardsb:#ffff;
-    --muteddetail:#ffff;
-    --lightxt:#ffff;
-    --footercop:#ffff;
-    --accenttest:#ffff;
-    --stext:#ffff;
+    --background:#95adf6;
+    --headings:#181818;
+    --foot:#0d0c0c;
+    --mnav:#1e63ec;
+    --highlightbg:#5093f6;
+    --highlightfg:#3a7efe;
+    --muteddetail:#f0b1b1;
+    --lightxt:#000000;
+    --footercop:#ae3d3d;
+    --accenttest:#d0e05c;
 }
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:var(--stext); /* in early builds bg colors and other colors will be done like this so that i can test colorschemes in devtools without getting lost*/
+    background-color:var(--lightxt); 
     padding:0px;
     margin:0px;
 }
@@ -54,7 +50,7 @@ body {
 #mnav li {
     background-color: var(--mnav);
     padding: 16px 5px;
-    border-bottom: 1px solid var(--stext);
+    border-bottom: 1px solid var(--lightxt);
     text-align: center;
     font-size: 20px;
 }
@@ -75,7 +71,7 @@ h1, h2, h3 {
 }
 
 .link {
-    background:teal;
+    background:rgb(22, 127, 127);
     color:rgb(251, 251, 251);
 }
 
@@ -95,12 +91,12 @@ h1, h2, h3 {
         padding: 20px 0 40px;
     }
 
-    .project-card {
+    .pcard {
         margin-bottom:0;
         min-height:200px;
     }
     
-    #main-nav li {
+    #mnav li {
         flex:1;
         border:0;
     }
