@@ -11,10 +11,9 @@
     --muteddetail:#f0b1b1;
     --lightxt:#000000;
     --footercop:#cac6c6;
-    --accenttest:#000000;
+    --accenttest:#ffffff;
 }
  
-/* body background changed from var(--lightxt) (black) to var(--background) so the text is readable: asked AI how to implement */
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color:var(--background);
