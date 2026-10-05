@@ -64,7 +64,17 @@ body {
 h1, h2, h3 {
     color:#000000;
 }
- 
+
+h1, h2, h3, #brand {
+    font-family: var(--headingfont);
+    letter-spacing: 0.5px;
+}
+
+.link, .arrow, #mnav a {
+    font-family: var(--buttonfont);
+    font-weight: 600;
+}
+
 .mobilecolumns {
     display:flex;
     flex-wrap: wrap;
@@ -131,12 +141,7 @@ main {
     padding: 15px;
     margin-bottom: 18px;
 }
- 
-.topic img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 .table-wrap {
     overflow-x: auto;
@@ -165,11 +170,17 @@ th, td {
     box-shadow: 4px 4px 0 var(--headings);
     padding: 15px;
 }
- 
-.species img {
-    max-width: 100%;
-    height: auto;
+
+.topic img, .species img {
     display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border: 2px solid var(--headings);
+}
+
+.topic img + img {
+    margin-top: 12px;
 }
  
 .citations li {
@@ -203,6 +214,32 @@ th, td {
     aspect-ratio: 2 / 1;
     object-fit: cover;
     border: 2px solid var(--headings);
+}
+
+#mainfoot {
+    background: var(--foot);
+    color: var(--footercop);
+    text-align: center;
+    padding: 20px 15px;
+}
+
+#mainfoot p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+#mainfoot a {
+    color: var(--accenttest);
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 @media (min-width: 1000px) {
