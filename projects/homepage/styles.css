@@ -138,13 +138,6 @@ main {
     display: block;
 }
 
-#slide img {
-    width: 100%;
-    aspect-ratio: 2 / 1;
-    object-fit: cover;
-    border: 2px solid var(--headings);
-}
-
 .table-wrap {
     overflow-x: auto;
 }
