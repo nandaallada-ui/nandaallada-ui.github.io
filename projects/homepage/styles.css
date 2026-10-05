@@ -41,25 +41,7 @@ body {
     border-left: 6px solid var(--headings);
     font-size: 1.7em;
 }
- 
-#mnav {
-    background: var(--mnav);
-    padding: 12px 0;
-}
- 
-#mnav li {
-    background-color: var(--mnav);
-    padding: 16px 5px;
-    border-bottom: 1px solid var(--lightxt);
-    text-align: center;
-    font-size: 20px;
-}
- 
-#mainheader {
-    text-align: center;
-    padding:70px 0 20px;
-    margin:0;
-}
+
  
 h1, h2, h3 {
     color:#000000;
@@ -109,7 +91,20 @@ h1, h2, h3, #brand {
     font-weight: bold;
     text-decoration: none;
 }
- 
+
+#mnav {
+    background: var(--mnav);
+    padding: 12px 0;
+}
+
+#mnav li {
+    background-color: var(--mnav);
+    padding: 16px 5px;
+    border-bottom: 1px solid var(--lightxt);
+    text-align: center;
+    font-size: 20px;
+}
+
 #mnav ul {
     list-style: none;
     margin: 0;
@@ -142,21 +137,6 @@ main {
     margin-bottom: 18px;
 }
 
-
-.table-wrap {
-    overflow-x: auto;
-}
- 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
- 
-th, td {
-    border: 2px solid var(--headings);
-    padding: 8px;
-    text-align: left;
-}
  
 .species-grid {
     display: grid;
@@ -209,13 +189,6 @@ th, td {
     outline: 3px solid var(--headings);
 }
 
-#slideimage {
-    width: 100%;
-    aspect-ratio: 2 / 1;
-    object-fit: cover;
-    border: 2px solid var(--headings);
-}
-
 #mainfoot {
     background: var(--foot);
     color: var(--footercop);
@@ -240,6 +213,33 @@ th, td {
 
 main {
     flex: 1;
+}
+
+#navcheck {
+    position: absolute;
+    opacity: 0;
+}
+
+#navtoggle {
+    display: block;
+    margin: 0 14px 12px;
+    background: var(--mnav);
+    color: var(--accenttest);
+    padding: 8px 14px;
+    font-family: var(--buttonfont);
+    cursor: pointer;
+}
+
+#navcheck:focus-visible + #navtoggle {
+    outline: 3px solid var(--headings);
+}
+
+#mnav {
+    display: none;
+}
+
+#navcheck:checked ~ #mnav {
+    display: block;
 }
 
 @media (min-width: 1000px) {
@@ -275,23 +275,7 @@ main {
     .two {
         flex:2;
     }
- 
-    .three {
-        flex:3;
-    }
- 
-    .four {
-        flex:4;
-    }
- 
-    .five {
-        flex:5;
-    }
- 
-    .six {
-        flex:6;
-    }
- 
+
     .topic {
         display: flex;
         gap: 24px;
@@ -304,5 +288,13 @@ main {
  
     .species-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+        #navtoggle {
+        display: none;
+    }
+
+    #mnav {
+        display: block;
     }
 }
