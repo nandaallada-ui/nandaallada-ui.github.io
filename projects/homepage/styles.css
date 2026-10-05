@@ -137,7 +137,14 @@ main {
     height: auto;
     display: block;
 }
- 
+
+#slide img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border: 2px solid var(--headings);
+}
+
 .table-wrap {
     overflow-x: auto;
 }
@@ -176,7 +183,35 @@ th, td {
     margin-bottom: 12px;
     overflow-wrap: anywhere;
 }
- 
+
+#slidecontrols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.arrow {
+    background: rgb(22, 127, 127);
+    color: rgb(251, 251, 251);
+    border: 0;
+    padding: 8px 18px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.arrow:focus {
+    outline: 3px solid var(--headings);
+}
+
+#slideimage {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border: 2px solid var(--headings);
+}
+
 @media (min-width: 1000px) {
     #content {
         width:80%;

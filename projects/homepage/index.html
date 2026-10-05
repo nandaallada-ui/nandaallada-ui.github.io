@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sharks</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <a class="skip" href="#main-content">Skip to main content</a>
     <div id="content">
         <header id="mainhead">
-
             <a id="brand" href="index.html">Sharks</a>
             <nav id="mnav">
                 <ul class="columns">
@@ -25,49 +25,24 @@
 
         <main id="main-content">
             <h1 id="page-title">Sharks</h1>
-            <section id="abtShark" class="topic">
+
+            <!-- slideshow suggestion added with AIs suggestion as a js feature also comment formatting in html -->
+            <section id="slideshow" class="topic" aria-label="Shark page slideshow">
                 <div class="one">
-                    <h2>About sharks</h2>
-                    <p>According to NOAA fisheries, sharks are elasmobranchs, meaning they do not posess a bone structure.</p>
-                    <a class="link" href="fact.html">More shark facts</a>
+                    <h2 id="slidetitle"></h2>
+                    <p id="slidefact"></p>
+                    <a id="slidelink" class="link" href="fact.html">Go to page</a>
                 </div>
                 <div class="one">
-                    <img src="../../images/shark.jpg" alt="Describe the image here">
-                </div>
-            </section>
-            <section id="behavior" class="topic flip">
-                <div class="one">
-                    <h2>Shark behaviors</h2>
-                    <p>Sharks are curious creatures, sometimes being observed biting boats, according to the save our seas foundation.</p>
-                    <a class="link" href="behavior.html">More shark behaviors</a>
-                </div>
-                <div class="one">
-                    <img src="../../images/GWB.webp" alt="Describe the image here">
+                    <img id="slide img" src="../../images/shark.jpg" alt="">
                 </div>
             </section>
 
-            <section id="Globalwarm" class="topic">
-                <div class="one">
-                    <h2>Poaching and global warming</h2>
-                    <p>Although sharks kill around 5-10 people, poaching kills around 100 million sharks a year due to taking their fins. This leaves them completely immobile and leaves them to die after being dumped in the ocean.</p>
-                    <a class="link" href="pollution.html">Learn more</a>
-                </div>
-                <div class="one">
-                    <img src="../../images/shark.jpg" alt="image of a shark, unfinned">
-                </div>
-            </section>
-
-            <section id="subspec" class="topic flip">
-                <div class="one">
-                    <h2>Types of sharks</h2>
-                    <p>Sharks come in many different shapes and sizes, being able to grow to 12 meters long.</p>
-                    <a class="link" href="subspecies.html">More examples</a>
-                </div>
-                <div class="one">
-                    <img src="../../images/lemonshark.jpg" alt="Describe the image here">
-                    <img src="../../images/baskingshark.jpg" alt="Describe the image here">
-                </div>
-            </section>
+            <div id="slidecontrols">
+                <button id="prev" class="arrow" type="button" aria-label="Previous slide">&#8592;</button>
+                <span id="slidecount"></span>
+                <button id="next" class="arrow" type="button" aria-label="Next slide">&#8594;</button>
+            </div>
         </main>
     </div>
 </body>
