@@ -12,20 +12,21 @@ function showResult(message, type) {
     result.className = type;
 }
 
+//got a recommendation to use formspree from claude, so that is what im using to send emails
+
 async function sendForm(event) {
     event.preventDefault();
     showResult("Sending...", "pending");
 
     try {
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const response = await fetch("https://formspree.io/f/xvkzqddz", {
             method: "POST",
             headers: { "Accept": "application/json" },
             body: new FormData(form)
         });
-        const data = await response.json();
         await wait(1000);
 
-        if (response.ok && data.success) {
+        if (response.ok) {
             showResult("Thank you! Your message was sent.", "success");
             form.reset();
         } else {
