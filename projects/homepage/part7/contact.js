@@ -12,18 +12,28 @@ function showResult(message, type) {
     result.className = type;
 }
 
-//got a recommendation to use formspree from claude, so that is what im using to send emails
 
 async function sendForm(event) {
     event.preventDefault();
     showResult("Sending...", "pending");
 
+    const formData =new FormData(form);
+    const data = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        message: formData.get("message")
+    };
+
     try {
-        const response = await fetch("https://formspree.io/f/xvkzqddz", {
+        const response = await fetch("http://localhost:5000/api/contact", {
             method: "POST",
-            headers: { "Accept": "application/json" },
-            body: new FormData(form)
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            },
+            body: JSON.stringify(data)
         });
+        
         await wait(1000);
 
         if (response.ok) {
