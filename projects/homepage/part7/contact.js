@@ -17,15 +17,14 @@ async function sendForm(event) {
     event.preventDefault();
     showResult("Sending...", "pending");
 
-    const formData =new FormData(form);
     const data = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message")
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
     };
 
     try {
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("http://localhost:3000/api/contact", {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",
@@ -33,7 +32,7 @@ async function sendForm(event) {
             },
             body: JSON.stringify(data)
         });
-        
+
         await wait(1000);
 
         if (response.ok) {
