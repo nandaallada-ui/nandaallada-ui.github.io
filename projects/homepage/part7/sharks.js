@@ -1,5 +1,5 @@
 const jsonurl = "https://nandaallada-ui.github.io/json/sharks.json";
-const imagefolder = "../../images/";
+const imagefolder = "/images/";
 
 async function getSharks() {
     try {
