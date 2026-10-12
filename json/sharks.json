@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "name": "Basking shark",
+    "image": "baskingshark.jpg",
+    "alt": "a basking shark, feeding",
+    "lifespan": "50 years",
+    "size": "7 to 8.5 meters (20-23 feet)",
+    "habitat": "Coastal and ocean waters",
+    "diet": "Plankton"
+  },
+  {
+    "_id": 2,
+    "name": "Lemon shark",
+    "image": "lemonshark.jpg",
+    "alt": "a lemon shark",
+    "lifespan": "25-30 years",
+    "size": "3 meters (about 10 feet)",
+    "habitat": "Shallow and coastal waters",
+    "diet": "Fish and crustaceans"
+  },
+  {
+    "_id": 3,
+    "name": "Great white shark",
+    "image": "shark.jpg",
+    "alt": "a great white shark",
+    "lifespan": "70 years",
+    "size": "3 to 6 meters (11-21 feet)",
+    "habitat": "Temperate and tropical offshore waters",
+    "diet": "Seals, sea lions, and large fish"
+  }
+]

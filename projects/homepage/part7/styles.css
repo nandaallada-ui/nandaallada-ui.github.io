@@ -12,6 +12,8 @@
     --lightxt:#000000;
     --footercop:#cac6c6;
     --accenttest:#ffffff;
+    --headingfont: "Poppins", Verdana, sans-serif;
+    --buttonfont: "Oswald", Verdana, sans-serif;
 }
  
 body {
@@ -242,6 +244,49 @@ main {
     display: block;
 }
 
+/* contact form styling */
+#contactform label {
+    display: block;
+    margin: 14px 0 4px;
+    font-weight: 600;
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+#contactform textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid var(--headings);
+    font-family: inherit;
+    font-size: 1em;
+}
+
+#contactform textarea {
+    resize: vertical;
+}
+
+#contactform button {
+    margin-top: 16px;
+}
+
+#formresult {
+    margin: 14px 0 0;
+    min-height: 1.4em;
+    font-weight: bold;
+}
+
+#formresult.success,
+#formresult.error,
+#formresult.pending {
+    background: white;
+    padding: 8px 12px;
+    border: 2px solid var(--headings);
+}
+
+#formresult.success { color: #0b5d1e; }
+#formresult.error { color: #8a1111; }
+
 @media (min-width: 1000px) {
     #content {
         width:80%;
@@ -297,4 +342,15 @@ main {
     #mnav {
         display: block;
     }
+    #contactform {
+        max-width: 600px;
+    }
+
 }
+
+ @media (min-width: 600px) {
+      .species-grid {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+  }

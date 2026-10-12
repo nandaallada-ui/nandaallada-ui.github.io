@@ -1,0 +1,21 @@
+<main id="main-content">
+    <h1 id="page-title">Contact me</h1>
+    <section class="topic">
+        <form id="contactform">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required minlength="2">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+            <input type="hidden" name="access_key" value="PASTE-YOUR-KEY-HERE">
+            <input type="hidden" name="subject" value="New message from my shark site">
+
+            <button class="arrow" type="submit">Send</button>
+            <p id="formresult" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
