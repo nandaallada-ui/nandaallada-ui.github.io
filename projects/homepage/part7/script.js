@@ -1,30 +1,32 @@
 // added by AI suggestion, looked at repo for reference
+const imagefolder = "/images/";
+
 const slides = [
     {
         title: "Shark facts",
         fact: "Sharks have existed longer than trees.",
-        image: "../../../images/shark.jpg",
+        image: imagefolder + "shark.jpg",
         alt: "a great white shark",
         link: "fact.html"
     },
     {
         title: "Shark behaviors",
         fact: "Sharks are curious creatures, sometimes observed biting boats.",
-        image: "../../../images/GWB.webp",
+        image: imagefolder + "GWB.webp",
         alt: "shark biting boat",
         link: "behavior.html"
     },
     {
         title: "Poaching and global warming",
         fact: "Around 100 million sharks are poached for their fins every year.",
-        image: "../../../images/globalwarm.jpg",
+        image: imagefolder + "globalwarm.jpg",
         alt: "global warming and the oceans",
         link: "pollution.html"
     },
     {
         title: "Shark subspecies",
         fact: "Basking sharks can reach 7 to 8.5 meters long.",
-        image: "../../../images/baskingshark.jpg",
+        image: imagefolder + "baskingshark.jpg",
         alt: "a basking shark, feeding",
         link: "subspecies.html"
     }
