@@ -23,8 +23,7 @@ async function sendForm(event) {
         message: document.getElementById("message").value
     };
     try {
-        const response = await fetch("/api/contact", {
-            method: "POST",
+    const response = await fetch("http://localhost:3000/api/contact", {
             headers: { 
                 "Content-Type": "application/json",
                 "Accept": "application/json" 
